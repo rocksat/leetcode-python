@@ -4,9 +4,13 @@
 # [28] Implement strStr()
 #
 
+
 # @lc code=start
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
-        
-# @lc code=end
+        if needle in haystack:
+            return haystack.index(needle)
+        return -1
 
+
+# @lc code=end
