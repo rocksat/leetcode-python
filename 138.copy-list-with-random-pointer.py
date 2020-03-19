@@ -36,8 +36,6 @@ class Solution:
         while p1:
             if p1.random:
                 p2.random = lut[p1.random]
-            else:
-                p2.random = None
             p1 = p1.next
             p2 = p2.next
         return dummy.next
